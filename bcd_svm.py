@@ -43,7 +43,7 @@ def main():
       print('Cross Validation Mean:',mean)
       print('Cross Validation Std:',std)
 
-      getFigure(clf,test_data[:200],test_label[:200])
+      #getFigure(clf,test_data[:200],test_label[:200])
 
 if __name__ == '__main__':
       main()
