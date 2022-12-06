@@ -1,0 +1,138 @@
+/content/drive/MyDrive/BloodcellDetection/BCCD/YOLOv6
+Namespace(batch_size=32, conf_thres=0.03, config_file='', data='data/bccd.yaml', device='0', do_coco_metric=True, do_pr_metric=False, eval_config_file='./configs/experiment/eval_640_repro.py', force_no_pad=False, half=False, img_size=640, iou_thres=0.65, letterbox_return_int=False, name='exp', not_infer_on_rect=False, plot_confusion_matrix=False, plot_curve=True, reproduce_640_eval=False, save_dir='runs/val/', scale_exact=False, task='val', test_load_size=640, verbose=False, weights='/content/drive/MyDrive/BloodcellDetection/BCCD/YOLOv6/runs/train/exp6/weights/best_ckpt.pt')
+Loading checkpoint from /content/drive/MyDrive/BloodcellDetection/BCCD/YOLOv6/runs/train/exp6/weights/best_ckpt.pt
+
+Fusing model...
+/usr/local/lib/python3.7/dist-packages/torch/functional.py:478: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at  ../aten/src/ATen/native/TensorShape.cpp:2894.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+Switch model to deploy modality.
+Model Summary: Params: 17.19M, Gflops: 44.07
+Val: Checking formats of labels with 2 process(es): 
+87 label(s) found, 0 label(s) missing, 0 label(s) empty, 0 invalid label files: 100% 87/87 [00:00<00:00, 739.56it/s]
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00000.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00002.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00014.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00017.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00028.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00029.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00030.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00035.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00037.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00053.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00055.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00064.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00066.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00072.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00073.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00089.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00099.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00104.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00109.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00111.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00115.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00125.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00130.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00140.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00143.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00145.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00147.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00148.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00152.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00162.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00183.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00192.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00193.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00207.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00209.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00216.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00217.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00218.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00219.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00221.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00222.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00223.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00228.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00230.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00236.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00241.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00244.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00245.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00246.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00255.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00260.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00261.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00262.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00269.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00272.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00274.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00277.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00285.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00298.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00304.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00310.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00312.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00315.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00326.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00330.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00331.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00334.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00337.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00338.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00340.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00342.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00349.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00350.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00352.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00367.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00368.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00381.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00383.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00386.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00389.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00392.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00396.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00397.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00398.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00402.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00409.txt: 0 duplicate labels removed
+WARNING: /content/drive/MyDrive/BloodcellDetection/BCCD/labels/val/BloodImage_00410.txt: 0 duplicate labels removed
+Convert to COCO format
+100% 87/87 [00:00<00:00, 17513.17it/s]
+Convert to COCO format finished. Resutls saved in /content/drive/MyDrive/BloodcellDetection/BCCD/annotations/instances_val.json
+Val: Final numbers of valid images: 87/ labels: 87. 
+0.4s for dataset initialization.
+Inferencing model in val datasets.: 100% 3/3 [00:03<00:00,  1.03s/it]
+
+Evaluating speed.
+Average pre-process time: 0.18 ms
+Average inference time: 7.84 ms
+Average NMS time: 4.69 ms
+
+Evaluating mAP by pycocotools.
+Saving runs/val/exp/predictions.json...
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+Loading and preparing results...
+DONE (t=0.18s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=2.28s).
+Accumulating evaluation results...
+DONE (t=0.14s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.312
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.642
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.273
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.039
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.265
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.373
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.225
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.431
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.531
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.117
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.552
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.560
+Results saved to runs/val/exp
