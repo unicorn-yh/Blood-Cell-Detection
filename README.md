@@ -35,16 +35,19 @@ Dataset: Train Dataset 584, Test Dataset 216
 
 #### Blood Cell Detection Result using K-Means
 
-|             基于 K-Means 聚类方法的血液细胞检测              |
-| :----------------------------------------------------------: |
-| <img src="README/image-20221205231449638.png" alt="image-20221205231449638" style="zoom:50%;" /> |
+|        K-Means       |              Result              |
+| :----------------------------------: | :----------------------------------------------------------: |
+| 基于 K-Means 聚类方法的血液细胞检测 | <img src="README/image-20221205231449638.png" alt="image-20221205231449638" style="zoom:50%;" /> |
 
 <br>
-|        Visualize K-Means Clustering in Train Dataset         |         Visualize K-Means Clustering in Test Dataset         |
-| :----------------------------------------------------------: | :----------------------------------------------------------: |
-| ![image-20221205215645392](README/image-20221205215645392.png) | ![image-20221205215640029](README/image-20221205215640029.png) |
 
-#### <br>Blood Cell Detection Result using SVM
+|        Visualize K-Means Clustering in Train Dataset       |              Visualize K-Means Clustering in Test Dataset              |
+| :----------------------------------: | :----------------------------------------------------------: |
+| ![](README/image-20221205215645392.png) | ![](README/image-20221205215640029.png) |
+
+<br>
+
+#### Blood Cell Detection Result using SVM
 
 | 模型类型                           |               基于 SVM 分类方法的血液细胞检测                |
 | :----------------------------------: | :----------------------------------------------------------: |
